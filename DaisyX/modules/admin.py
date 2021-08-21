@@ -60,13 +60,13 @@ async def set_user_title(_, message):
             return
         if len(message.command) < 2:
             await message.reply_text(
-                "**Usage:**\n/set_user_title NEW ADMINISTRATOR TITLE"
+                "**Usage:**\n/set_user_title ADMIN BARU KEK KONTOL"
             )
             return
         title = message.text.split(None, 1)[1]
         await app.set_administrator_title(chat_id, from_user.id, title)
         await message.reply_text(
-            f"Successfully Changed {from_user.mention}'s Admin Title To {title}"
+            f"Sukses Menaikan Admin {from_user.mention}'s Tittle Adminnya {title}"
         )
     except Exception as e:
         print(e)
